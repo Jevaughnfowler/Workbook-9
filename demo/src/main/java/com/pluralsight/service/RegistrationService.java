@@ -1,5 +1,6 @@
 package com.pluralsight.service;
 
+import com.pluralsight.StudentAlreadyRegisteredException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
@@ -33,4 +34,6 @@ public class RegistrationService {
 
         return registrationDAO.persistStudent(student);
     }
+
+
 }
